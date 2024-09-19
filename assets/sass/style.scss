@@ -1,0 +1,23 @@
+/* variable import*/
+@import'./variable/variable';
+
+/* navigation part import*/
+@import'./component/navigation';
+
+/* navigation part import*/
+@import'./component/hero-section';
+
+/* navigation part import*/
+@import'./component/category';
+
+/* navigation part import*/
+@import'./component/selling';
+
+/* navigation part import*/
+@import'./component/testimonial';
+
+/* common sass file import*/
+@import'./base/common';
+
+/* bootstrap sass file import*/
+@import'./../bootstrap/scss/bootstrap.scss';

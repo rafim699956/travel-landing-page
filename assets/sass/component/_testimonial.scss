@@ -1,0 +1,118 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+
+.testimonial {
+    padding-bottom: clamp(3.125rem, -0.4464rem + 17.8571cqi, $space-200);
+}
+
+.testimonial_left_content {
+    width: min($size-395, 100vw);
+    gap: $gap-47;
+
+    .test_item {
+        gap: $gap-20;
+
+        .test_content {
+            h4 {
+                font-size: $font-size-16;
+                line-height: $line-height-124-5;
+                color: $paragraph-color;
+            }
+
+            p {
+                @include peragraph ($line-height-124-5);
+            }
+
+        }
+    }
+}
+
+.test_right_content {
+    padding-top: $space-60;
+
+    .jurny_content {
+        width: $size-400;
+        padding: $space-20 $space-25;
+        border-radius: $border-radius-26;
+        box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
+
+        .bottom_content {
+            padding-top: $space-26;
+
+            p {
+                @include peragraph($line-height-124-5)
+            }
+
+            .jurny {
+                h4 {
+                    font-size: $font-size-18;
+                    line-height: $line-height-124-5;
+                    letter-spacing: 0.015em;
+                    color: #080809;
+                    margin-bottom: $space-13;
+                }
+
+                .jurny_date {
+                    span {
+                        font-weight: 500;
+                        font-size: $font-size-16;
+                        line-height: $line-height-124-5;
+                        letter-spacing: -0.05em;
+                        color: #84829A;
+                        margin-bottom: $space-20;
+                        position: relative;
+
+                        &:first-child {
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                height: 100%;
+                                width: 1px;
+                                background: #84829A;
+                                right: -3px;
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social {
+                gap: $gap-18;
+                margin-bottom: $space-29;
+
+                a {
+                    width: $size-36;
+                    aspect-ratio: 1 / 1;
+                    border-radius: 50%;
+                    background: #F5F5F5;
+                }
+            }
+        }
+    }
+}
+
+.ongoing {
+    gap: $gap-11;
+    padding: $space-20 $space-25 $space-22 $space-18;
+    border-radius: $border-radius-30;
+    box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.048);
+
+    .ongoing_content {
+        p {
+            font-size: $font-size-14;
+            line-height: $line-height-124-5;
+            letter-spacing: -0.0.5em;
+            color: #84829A;
+            margin-bottom: 6px;
+        }
+
+        h5 {
+            @include peragraph($line-height-124-5);
+            letter-spacing: -0.015em;
+            color: #080809;
+            margin-bottom: 14px;
+        }
+    }
+}

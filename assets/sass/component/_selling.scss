@@ -1,0 +1,37 @@
+@import'../variable/variable';
+
+.selling {
+    padding-top: $space-123;
+    padding-bottom: $space-186;
+
+    .common_headline {
+        padding-bottom: $space-60;
+    }
+
+    .selling_wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+        gap: $gap-47;
+
+        .selling_item {
+            border-radius: $border-radius-24;
+            box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 64.81px 46.85px 0 rgba(0, 0, 0, 0.152);
+            box-shadow: 0 38.52px 25.48px 0 rgba(0, 0, 0, 0.121);
+            box-shadow: 0 20px 13px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8.15px 6.52px 0 rgba(0, 0, 0, 0.79);
+            box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
+
+            img {
+                object-fit: cover;
+            }
+
+            .sellign_content {
+                padding: $space-27 $space-22 $space-42;
+                background: $white-color;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
