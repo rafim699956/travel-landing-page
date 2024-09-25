@@ -1,0 +1,89 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+.footer {
+    padding-bottom: 79px;
+    .footer_row {
+        margin-bottom: 84px;
+    }
+
+    .jadoo_page {
+        a {
+            font-size: 2.75rem;
+            color: #181E48;
+            margin-bottom: 19px;
+            line-height: 100%;
+        }
+
+        p {
+            @include peragraph($line-height-124-5);
+            font-size: $font-size-14;
+        }
+    }
+
+    .footer_content {
+        h3 {
+            font-size: $font-size-20;
+            line-height: $line-height-124-5;
+            color: #080809;
+            margin-bottom: 34px;
+        }
+
+        ul {
+            gap: 12px;
+
+            li {
+                a {
+                    font-weight: 500;
+                    @include peragraph($line-height-124-5);
+                }
+            }
+        }
+    }
+
+    .footer_link {
+        .footer_icon {
+            gap: 25px;
+            margin-bottom: 26px;
+
+            .icon_item {
+                width: 41px;
+                aspect-ratio: 1 / 1;
+                background-color: $white-color;
+                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+                transition: background-image linear 0.3s;
+
+                i {
+                    color: #080809;
+                }
+
+                &:hover {
+                    background-image: conic-gradient(#B8D2F1 0%, #F289AA 17%, #C68BF0 29%, #D164DA 43%,
+                            #C963E8 61%, #BFC2E8 72%, #FFC999 80%, #D0D8C9 88%, #BAD0F1 93%, #CED8CB 100%, #FFFFFF 100%);
+
+                    i {
+                        color: $white-color;
+                    }
+
+                    transform: scale(1.1);
+                }
+
+            }
+        }
+
+        .footer_app {
+            p {
+                @include peragraph($line-height-124-5);
+                font-size: $font-size-20;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+    .copyright_author {
+        p{
+            @include peragraph($line-height-124-5);
+            font-size: $font-size-14;
+        }
+    }
+
+}

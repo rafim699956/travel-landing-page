@@ -1,0 +1,40 @@
+@import '../variable/variable';
+@import '../mixins/mixins';
+
+.testimonial {
+    .test_slider {
+        z-index: -1;
+    }
+
+    .slider_item {
+        padding: 28px 68px 34px 34px;
+        box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
+        left: 34px;
+        top: -34px;
+        z-index: -1;
+        background: $white-color;
+
+        &.item-2 {
+            left: 87px;
+            top: -190px;
+            z-index: -2;
+        }
+
+        q {
+            font-size: $font-size-16;
+            line-height: $line-height-32;
+            color: #5E6282;
+            margin-bottom: 34px;
+        }
+
+        h3 {
+            font-size: $font-size-18;
+            color: #5E6282;
+            margin-bottom: 5px
+        }
+
+        p {
+            @include peragraph();
+        }
+    }
+}

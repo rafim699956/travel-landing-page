@@ -1,11 +1,12 @@
 @import '../variable/variable';
 
-@mixin peragraph ($lh){
+@mixin peragraph ($lh:0) {
     font-size: clamp(0.75rem, 0.6574rem + 0.463cqi, $font-size-16);
     line-height: $lh;
     color: $paragraph-color
 }
-@mixin btn (){
+
+@mixin btn () {
     space: $space-18 $space-27;
     border-radius: $border-radius-10;
     font-size: $font-size-18;

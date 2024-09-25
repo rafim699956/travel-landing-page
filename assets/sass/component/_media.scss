@@ -1,0 +1,18 @@
+@import'../variable/variable';
+@import'../mixins/mixins';
+
+
+.splide__img {
+    width: 100px;
+    height: 100px;
+}
+
+.splide__slide.is-active {
+    background-color: $white-color;
+    box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.2),0 64.81px 46.85px 0 rgba(0, 0, 0, 0.15),
+    0 64.81px 46.85px 0 rgba(0, 0, 0, 0.15), 0 20px 20px 0 rgba(0, 0, 0, 0.1),
+    0 8.15px 6.52px 0 rgba(0, 0, 0, 0.79), 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
+}
+.media{
+    margin-bottom: 111px;
+}

@@ -25,46 +25,54 @@ main {
                     color: $red;
                 }
 
-                h1 {
-                    font-size: clamp(1.5625rem, 0.1968rem + 6.8287cqi, $font-size-84);
+                .decore {
+                    img {
+                        top: 100px;
+                        right: -60px;
+                        z-index: -1;
+                    }
+
+                    h1 {
+                        font-size: clamp(1.5625rem, 0.1968rem + 6.8287cqi, $font-size-84);
+                    }
                 }
             }
+        }
 
-            p {
-                @include peragraph ($line-height-30);
-                margin-bottom: clamp(1.25rem, 0.9259rem + 1.6204cqi, 2.125rem);
+        p {
+            @include peragraph ($line-height-30);
+            margin-bottom: clamp(1.25rem, 0.9259rem + 1.6204cqi, 2.125rem);
+        }
+
+        .hero_btn {
+            gap: $gap-44;
+
+            .btn {
+                @include btn();
+                box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
             }
 
-            .hero_btn {
-                gap: $gap-44;
+            a {
+                &:last-child {
+                    font-size: $font-size-16;
+                    color: #686D77;
+                    gap: $gap-20;
 
-                .btn {
-                    @include btn();
-                    box-shadow: 0 20px 35px 0 rgba(241, 165, 1, 0.15);
-                }
+                    .video_btn {
+                        width: $size-52;
+                        aspect-ratio: 1 / 1;
+                        border-radius: 50%;
+                        background: $red;
+                        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
-                a {
-                    &:last-child {
-                        font-size: $font-size-16;
-                        color: #686D77;
-                        gap: $gap-20;
-
-                        .video_btn {
-                            width: $size-52;
-                            aspect-ratio: 1 / 1;
-                            border-radius: 50%;
-                            background: $red;
-                            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
-                            i {
-                                font-size: $font-size-16;
-                                color: $white-color;
-                            }
+                        i {
+                            font-size: $font-size-16;
+                            color: $white-color;
                         }
                     }
                 }
-
             }
+
         }
     }
 }

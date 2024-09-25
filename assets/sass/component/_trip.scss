@@ -1,13 +1,17 @@
 @import '../variable/variable';
 @import '../mixins/mixins';
 
+/*variable*/
 
-.testimonial {
+$progress-height: 6px;
+
+/*==================================*/
+.trip {
     padding-bottom: clamp(3.125rem, -0.4464rem + 17.8571cqi, $space-200);
 }
 
-.testimonial_left_content {
-    width: min($size-395, 100vw);
+.trip_left_content {
+    width: min($size-288, 100vw);
     gap: $gap-47;
 
     .test_item {
@@ -30,9 +34,20 @@
 
 .test_right_content {
     padding-top: $space-60;
+    z-index: 1;
+
+    // &::before {
+    //     position: absolute;
+    //     content: "";
+    //     background: #59B1E6;
+    //     opacity: 0.4;
+    //     right: 0;
+    //     top: 0;
+    //     z-index: -1;
+    // }
 
     .jurny_content {
-        width: $size-400;
+        width: clamp(18.625rem, 16.369rem + 11.9048cqi, $size-400);
         padding: $space-20 $space-25;
         border-radius: $border-radius-26;
         box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
@@ -98,6 +113,10 @@
     padding: $space-20 $space-25 $space-22 $space-18;
     border-radius: $border-radius-30;
     box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.048);
+    bottom: 52px;
+    left: 222px;
+    background: $white-color;
+    z-index: 11;
 
     .ongoing_content {
         p {
@@ -113,6 +132,32 @@
             letter-spacing: -0.015em;
             color: #080809;
             margin-bottom: 14px;
+            font-size: $font-size-18;
+        }
+
+        h6 {
+            font-size: $font-size-14;
+            line-height: $line-height-124-5;
+            letter-spacing: -0.0.5em;
+            color: #080809;
+            margin-bottom: 10px;
+
+            span {
+                color: #8A79DF;
+            }
+        }
+
+        .progress {
+            width: 156px;
+
+            .progress-bar {
+                width: 46.79% !important;
+            }
         }
     }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+.ongoing {
+    position: relative !important;
+}
 }
