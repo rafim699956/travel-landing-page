@@ -7,7 +7,8 @@
     }
 
     .slider_item {
-        padding: 28px 68px 34px 34px;
+        padding-block: clamp(1.125rem, 0.9076rem + 1.087cqi, 1.75rem) clamp(1.5rem, 1.2826rem + 1.087cqi, 2.125rem);
+        padding-inline: clamp(1.5625rem, 0.6277rem + 4.6739cqi, 4.25rem) clamp(0.5rem, 1.2826rem + 1.087cqi, 2.125rem);
         box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
         left: 34px;
         top: -34px;
@@ -36,5 +37,20 @@
         p {
             @include peragraph();
         }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:778px) {
+    .testimonial {
+        .slider_item {
+            left: 0;
+            top: 0;
+
+            &.item-2 {
+                left: 0;
+                top: -170px;
+            }
+        }
+
     }
 }

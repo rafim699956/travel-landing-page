@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /* variable import*/
 /* defind variable*/
 /* color*/
@@ -64,11 +65,6 @@ main .hero .hero_content hgroup {
 main .hero .hero_content hgroup h2, main .hero .hero_content hgroup .h2 {
   font-size: clamp(1rem, 0.9074rem + 0.463vw, 1.25rem);
   color: #DF6951;
-}
-main .hero .hero_content hgroup .decore img {
-  top: 100px;
-  right: -60px;
-  z-index: -1;
 }
 main .hero .hero_content hgroup .decore h1, main .hero .hero_content hgroup .decore .h1 {
   font-size: clamp(1.5625rem, 0.1968rem + 6.8287cqi, 5.25rem);
@@ -254,7 +250,7 @@ main .hero .hero_btn a:last-child .video_btn i {
   z-index: 1;
 }
 .test_right_content .jurny_content {
-  width: clamp(18.625rem, 16.369rem + 11.9048cqi, 25rem);
+  width: clamp(17.625rem, 15.369rem + 11.9048cqi, 25rem);
   padding: 1.25rem 1.563rem;
   border-radius: 1.625rem;
   box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
@@ -311,6 +307,7 @@ main .hero .hero_btn a:last-child .video_btn i {
   bottom: 52px;
   left: 222px;
   background: #FFFFFF;
+  position: absolute;
   z-index: 11;
 }
 .ongoing .ongoing_content p {
@@ -346,9 +343,9 @@ main .hero .hero_btn a:last-child .video_btn i {
   width: 46.79% !important;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 319px) and (max-width: 768px) {
   .ongoing {
-    position: relative !important;
+    position: static !important;
   }
 }
 /* navigation part import*/
@@ -372,7 +369,8 @@ main .hero .hero_btn a:last-child .video_btn i {
   z-index: -1;
 }
 .testimonial .slider_item {
-  padding: 28px 68px 34px 34px;
+  padding-block: clamp(1.125rem, 0.9076rem + 1.087cqi, 1.75rem) clamp(1.5rem, 1.2826rem + 1.087cqi, 2.125rem);
+  padding-inline: clamp(1.5625rem, 0.6277rem + 4.6739cqi, 4.25rem) clamp(0.5rem, 1.2826rem + 1.087cqi, 2.125rem);
   box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
   left: 34px;
   top: -34px;
@@ -401,6 +399,16 @@ main .hero .hero_btn a:last-child .video_btn i {
   color: #5E6282;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 778px) {
+  .testimonial .slider_item {
+    left: 0;
+    top: 0;
+  }
+  .testimonial .slider_item.item-2 {
+    left: 0;
+    top: -170px;
+  }
+}
 /* navigation part import*/
 /* defind variable*/
 /* color*/
@@ -457,12 +465,12 @@ main .hero .hero_btn a:last-child .video_btn i {
   background-color: rgb(223, 215, 249);
   padding-top: clamp(1.25rem, 0.0595rem + 5.9524cqi, 4.375rem);
   padding-bottom: clamp(1.25rem, -0.131rem + 6.9048cqi, 4.875rem);
-  padding-inline: clamp(1.25rem, -1.7024rem + 14.7619cqi, 9rem);
+  padding-inline: clamp(1.25rem, -0.7024rem + 14.7619cqi, 9rem);
   border-radius: 129px 20px 20px;
 }
 .newsletter_content h2, .newsletter_content .h2 {
-  font-size: 33px;
-  line-height: 54px;
+  font-size: clamp(1.5rem, 1.3043rem + 0.9783cqi, 2.0625rem);
+  line-height: clamp(1.875rem, 1.753rem + 2.6087cqi, 3.375rem);
   color: #5E6282;
   margin-bottom: 74px;
 }
@@ -500,17 +508,38 @@ main .hero .hero_btn a:last-child .video_btn i {
   top: -13px;
   right: -20px;
 }
+@media only screen and (min-width: 320px) and (max-width: 1313px) {
+  .newsletter_content .send {
+    right: 0;
+    top: -40px;
+  }
+}
 .newsletter_content .star {
   bottom: -70px;
   right: -99px;
   z-index: -1;
 }
+@media only screen and (min-width: 320px) and (max-width: 1313px) {
+  .newsletter_content .star {
+    right: 0;
+  }
+}
 .newsletter_content .left_angle {
   left: 20px;
   z-index: -1;
+  width: clamp(9.375rem, 4.5054rem + 24.3478vw, 23.375rem);
+}
+.newsletter_content .left_angle svg {
+  max-width: 100%;
+  width: 100%;
 }
 .newsletter_content .right_angle {
   z-index: -1;
+  width: clamp(6.25rem, 4.0109rem + 11.1957cqi, 12.6875rem);
+}
+.newsletter_content .right_angle svg {
+  max-width: 100%;
+  width: 100%;
 }
 
 /* navigation part import*/

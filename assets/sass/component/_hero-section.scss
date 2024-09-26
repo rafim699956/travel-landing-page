@@ -26,14 +26,23 @@ main {
                 }
 
                 .decore {
-                    img {
-                        top: 100px;
-                        right: -60px;
-                        z-index: -1;
-                    }
+                    // img {
+                    //     width: clamp(12.5rem, 10.413rem + 10.4348cqi, 18.5rem) !important;
+                    //     top: 100px;
+                    //     right: -60px;
+                    //     z-index: -1;
+                    // }
 
                     h1 {
                         font-size: clamp(1.5625rem, 0.1968rem + 6.8287cqi, $font-size-84);
+                        // &::after{
+                        //     position: absolute;
+                        //     content: "";
+                        //     background: url(../../images/Decore.png) no-repeat center center/cover;
+                        //     // width: clamp(12.5rem, 10.413rem + 10.4348cqi, 18.5rem) !important;
+                        //     width: 296px;
+                        //     height: 6px;
+                        // }
                     }
                 }
             }

@@ -6,6 +6,7 @@
 $progress-height: 6px;
 
 /*==================================*/
+
 .trip {
     padding-bottom: clamp(3.125rem, -0.4464rem + 17.8571cqi, $space-200);
 }
@@ -47,7 +48,7 @@ $progress-height: 6px;
     // }
 
     .jurny_content {
-        width: clamp(18.625rem, 16.369rem + 11.9048cqi, $size-400);
+        width: clamp(17.625rem, 15.369rem + 11.9048cqi, $size-400);
         padding: $space-20 $space-25;
         border-radius: $border-radius-26;
         box-shadow: 0 1.85px 3.15px 0 rgba(0, 0, 0, 0.48);
@@ -116,6 +117,7 @@ $progress-height: 6px;
     bottom: 52px;
     left: 222px;
     background: $white-color;
+    position: absolute;
     z-index: 11;
 
     .ongoing_content {
@@ -156,8 +158,9 @@ $progress-height: 6px;
         }
     }
 }
-@media (min-width: 320px) and (max-width: 768px) {
-.ongoing {
-    position: relative !important;
-}
+
+@media only screen and (min-width: 319px) and (max-width: 768px) {
+    .ongoing {
+        position: static !important;
+    }
 }
